@@ -1,0 +1,23 @@
+package com.customer.service.feignclients;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.customer.service.feign.Account;
+
+import reactor.core.publisher.Mono;
+
+@FeignClient(name = "account-service", url = "http://localhost:8002")
+@RequestMapping("/account")
+public interface AccountFeignClient {
+
+	@PostMapping()
+	public Mono<Account> save(@RequestBody Account account);
+
+	@GetMapping("/account/{nroDocument}")
+	public Mono<Account> getAccountByNroDocument(@PathVariable("nroDocument") int nroDocument);
+}

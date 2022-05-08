@@ -1,0 +1,5 @@
+package com.account.service.service;
+
+public class AccountService {
+
+}

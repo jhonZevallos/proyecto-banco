@@ -1,0 +1,20 @@
+package com.customer.service.feign;
+
+import java.time.LocalDateTime;
+
+import org.springframework.data.annotation.CreatedDate;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+public class Credit {
+
+	private int idCredit;
+
+	private int nroDocument;
+	private String typeCredit;
+	private double creditLimit;
+	// ****formate de fechas********************
+	@JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss")
+	@CreatedDate
+	private LocalDateTime membershipDate;
+}

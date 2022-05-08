@@ -1,0 +1,5 @@
+package com.transaction.service.service;
+
+public interface TransactionService {
+
+}

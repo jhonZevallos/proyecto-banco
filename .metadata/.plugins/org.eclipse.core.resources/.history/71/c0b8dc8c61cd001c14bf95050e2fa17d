@@ -1,0 +1,5 @@
+package com.account.service.controller;
+
+public class AccountController {
+
+}

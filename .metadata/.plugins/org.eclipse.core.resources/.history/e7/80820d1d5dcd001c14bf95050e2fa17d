@@ -1,0 +1,21 @@
+package com.account.service.model;
+
+import java.time.LocalDateTime;
+
+import org.springframework.data.annotation.Id;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+public class Account {
+	
+	@Id
+    private String accountNumber;
+	
+	private String typeCustomer;
+    private int nroDocument;
+    private String typeAccount;
+
+    @JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss")
+    private LocalDateTime membershipDate;
+
+}

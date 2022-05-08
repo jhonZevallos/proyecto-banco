@@ -1,0 +1,53 @@
+package com.credit.service.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.credit.service.model.Credit;
+import com.credit.service.repository.CreditRepository;
+
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+
+@Service
+public class CreditServiceImpl implements CreditService {
+
+	@Autowired
+	private CreditRepository creditRepository;
+
+	@Override
+	public Mono<Credit> addCredit(Credit c) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Flux<Credit> getAllCredit() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Mono<Credit> getCreditById(int idCredit) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Mono<Credit> getCreditByNroDoc(int nroDocument) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Mono<Credit> getCreditByTypeCredit(String typeCredit) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteCredit(int idCredit) {
+		// TODO Auto-generated method stub
+
+	}
+}
