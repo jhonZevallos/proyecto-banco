@@ -1,0 +1,9 @@
+spring:
+  data:
+    mongodb:
+      authentication-database: none
+      database: credit
+      port: '27017'
+      host: localhost
+server:
+  port: '8003'
