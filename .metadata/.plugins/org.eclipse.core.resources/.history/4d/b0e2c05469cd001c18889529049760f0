@@ -1,5 +1,0 @@
-package com.credit.service.repository;
-
-public interface CreditRepository {
-
-}
