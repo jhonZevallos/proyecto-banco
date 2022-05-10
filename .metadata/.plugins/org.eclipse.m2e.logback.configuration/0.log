@@ -830,3 +830,24 @@
 2022-05-10 14:05:03,357 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-05-10 14:05:03,357 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2022-05-10 14:05:03,357 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\nttdata\Proyecto Banco\gateway-service\src\test\resources
+2022-05-10 15:24:50,988 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-05-10 15:24:50,988 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-05-10 15:24:50,989 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-05-10 15:24:50,989 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-05-10 15:24:50,991 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-05-10 15:24:50,991 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-05-10 15:24:50,991 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\nttdata\Proyecto Banco\customer-service\src\test\resources
+2022-05-10 15:25:08,655 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-05-10 15:25:08,656 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-05-10 15:25:08,656 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-05-10 15:25:08,657 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-05-10 15:25:08,658 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-05-10 15:25:08,658 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-05-10 15:25:08,658 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\nttdata\Proyecto Banco\customer-service\src\test\resources
+2022-05-10 15:25:22,845 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-05-10 15:25:22,845 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-05-10 15:25:22,846 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-05-10 15:25:22,847 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-05-10 15:25:22,848 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-05-10 15:25:22,848 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-05-10 15:25:22,848 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\nttdata\Proyecto Banco\customer-service\src\test\resources

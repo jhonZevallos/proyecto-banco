@@ -72,7 +72,7 @@ public class CustomerServiceImpl implements CustomerService {
 
 	@Override
 	public Mono<Account> getAccountByNroDoc(int nroDocument) {
-		Mono<Account> account = WebClient.create("http://localhost:8002").get().uri("/account/customer/" + nroDocument)
+		Mono<Account> account = WebClient.create("http://localhost:8080").get().uri("/account/customer/" + nroDocument)
 				.retrieve().bodyToMono(Account.class);
 		return account;
 	}
@@ -80,14 +80,14 @@ public class CustomerServiceImpl implements CustomerService {
 	@Override
 	public Mono<Account> addAccount(int nroDocument, Account a) {
 		a.setNroDocument(nroDocument);
-		Mono<Account> nuevoAccount = WebClient.create("http://localhost:8002").post().uri("/account")
+		Mono<Account> nuevoAccount = WebClient.create("http://localhost:8080").post().uri("/account")
 				.body(Mono.just(a), Account.class).retrieve().bodyToMono(Account.class);
 		return nuevoAccount;
 	}
 
 	@Override
 	public Mono<Credit> getCreditByNroDoc(int nroDocument) {
-		Mono<Credit> credit = WebClient.create("http://localhost:8003").get().uri("/credit/customer/" + nroDocument)
+		Mono<Credit> credit = WebClient.create("http://localhost:8080").get().uri("/credit/customer/" + nroDocument)
 				.retrieve().bodyToMono(Credit.class);
 		return credit;
 	}
@@ -95,7 +95,7 @@ public class CustomerServiceImpl implements CustomerService {
 	@Override
 	public Mono<Credit> addCredit(int nroDocument, Credit credit) {
 		credit.setNroDocument(nroDocument);
-		Mono<Credit> nuevoCredit = WebClient.create("http://localhost:8003").post().uri("/credit")
+		Mono<Credit> nuevoCredit = WebClient.create("http://localhost:8080").post().uri("/credit")
 				.body(Mono.just(credit), Credit.class).retrieve().bodyToMono(Credit.class);
 		return nuevoCredit;
 	}
@@ -106,10 +106,10 @@ public class CustomerServiceImpl implements CustomerService {
 
 		return customerRepository.findByNroDocument(nroDocument)
 				.flatMap(customer->{
-					return WebClient.create("http://localhost:8002").get().uri("/account/customer/{nroDocument}", nroDocument)
+					return WebClient.create("http://localhost:8080").get().uri("/account/customer/{nroDocument}", nroDocument)
 							.retrieve().bodyToMono(Account.class).
 							flatMap(account ->{
-								return WebClient.create("http://localhost:8003").get().uri("/credit/customer/{nroDocument}", nroDocument)
+								return WebClient.create("http://localhost:8080").get().uri("/credit/customer/{nroDocument}", nroDocument)
 								.retrieve().bodyToMono(Credit.class)
 								.flatMap(credit->{
 									report.setCustomer(customer);
