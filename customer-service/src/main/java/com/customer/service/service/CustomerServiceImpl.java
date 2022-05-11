@@ -128,6 +128,7 @@ public class CustomerServiceImpl implements CustomerService {
 		Report report = new Report();
 
 		return customerRepository.findByNroDocument(nroDocument)
+				.defaultIfEmpty(new Customer())
 				.flatMap(customer->{
 					return WebClient.create("http://localhost:8080").get().uri("/account/customer/{nroDocument}", nroDocument)
 							.retrieve().bodyToMono(Account.class)
@@ -135,6 +136,7 @@ public class CustomerServiceImpl implements CustomerService {
 								ReactiveCircuitBreaker rcb = reactiveCircuitBreakerFactory.create("serviceCB");
 								return rcb.run(it, throwable -> Mono.empty()); 
 							})
+							.defaultIfEmpty(new Account())
 							.flatMap(account ->{
 								return WebClient.create("http://localhost:8080").get().uri("/credit/customer/{nroDocument}", nroDocument)
 								.retrieve().bodyToMono(Credit.class)
@@ -142,6 +144,7 @@ public class CustomerServiceImpl implements CustomerService {
 									ReactiveCircuitBreaker rcb = reactiveCircuitBreakerFactory.create("serviceCB");
 									return rcb.run(it, throwable -> Mono.empty()); 
 								})
+								.defaultIfEmpty(new Credit())
 								.flatMap(credit->{
 									report.setCustomer(customer);
 									report.setAccounts(account);
