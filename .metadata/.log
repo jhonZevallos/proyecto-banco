@@ -2693,3 +2693,301 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-10 18:07:46.655
 !MESSAGE Server returned lastModified <= 0 for https://raw.githubusercontent.com/AObuchow/Eclipse-Spectrum-Theme/updatesite/updatesite/content.jar
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:14.533
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:14.540
+!MESSAGE classpath=144 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:14.546
+!MESSAGE buffering callback sts4.classpath.ypzSDFoj bank-account-service false 144
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:14.546
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:14.551
+!MESSAGE classpath=89 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:14.555
+!MESSAGE buffering callback sts4.classpath.ypzSDFoj config-service false 89
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:14.556
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:14.562
+!MESSAGE classpath=144 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:14.566
+!MESSAGE buffering callback sts4.classpath.ypzSDFoj credit-service false 144
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:14.567
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:14.577
+!MESSAGE classpath=176 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:14.584
+!MESSAGE buffering callback sts4.classpath.ypzSDFoj customer-service false 176
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:14.585
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:14.593
+!MESSAGE classpath=140 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:14.598
+!MESSAGE buffering callback sts4.classpath.ypzSDFoj eureka-service false 140
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:14.599
+!MESSAGE executing callback sts4.classpath.ypzSDFoj 5 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:15.284
+!MESSAGE executing callback sts4.classpath.ypzSDFoj SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:15.286
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:15.290
+!MESSAGE classpath=137 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:15.293
+!MESSAGE buffering callback sts4.classpath.ypzSDFoj gateway-service false 137
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:15.294
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:15.298
+!MESSAGE classpath=144 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:15.302
+!MESSAGE buffering callback sts4.classpath.ypzSDFoj transaction-service false 144
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:15.303
+!MESSAGE executing callback sts4.classpath.ypzSDFoj 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:36:15.334
+!MESSAGE executing callback sts4.classpath.ypzSDFoj SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:38:57.701
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:38:57.709
+!MESSAGE classpath=177 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:38:57.714
+!MESSAGE buffering callback sts4.classpath.ypzSDFoj customer-service false 177
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:38:57.715
+!MESSAGE executing callback sts4.classpath.ypzSDFoj 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:38:57.739
+!MESSAGE executing callback sts4.classpath.ypzSDFoj SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:39:11.757
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:39:11.765
+!MESSAGE classpath=177 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:39:11.773
+!MESSAGE buffering callback sts4.classpath.ypzSDFoj customer-service false 177
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:39:11.774
+!MESSAGE executing callback sts4.classpath.ypzSDFoj 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 19:39:11.803
+!MESSAGE executing callback sts4.classpath.ypzSDFoj SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 20:05:02.491
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ypzSDFoj
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 20:05:02.492
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.ypzSDFoj
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 20:05:02.493
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-10 20:05:02.495
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ypzSDFoj => OK
+!SESSION 2022-05-11 10:59:16.486 -----------------------------------------------
+eclipse.buildId=4.14.0.202203131612
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_PE
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-05-11 10:59:30.502
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-11 10:59:30.502
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4ef28dc4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@59b3f162,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-11 10:59:30.502
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7ade62a6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@53d15034,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.net 4 0 2022-05-11 10:59:35.146
+!MESSAGE WinHttp.DetectAutoProxyConfigUrl for wpad failed with error 'No se encontró la dirección URL de configuración automática del proxy.
+' #12180.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:36.835
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:36.835
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@2a025b86[org.springframework.tooling.boot.ls:1.32.0.202203131529(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:36.835
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:37.142
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-11 10:59:38.520
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\jzevallb'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.485
+!MESSAGE Boot LS startup time from start to initialized: 3624ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.592
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.HNtTMVUjisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.596
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.599
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.600
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.601
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.602
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.HNtTMVUj => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.617
+!MESSAGE classpath=177 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.623
+!MESSAGE buffering callback sts4.classpath.HNtTMVUj customer-service false 177
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.624
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.630
+!MESSAGE classpath=144 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.634
+!MESSAGE buffering callback sts4.classpath.HNtTMVUj bank-account-service false 144
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.636
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.639
+!MESSAGE classpath=89 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.642
+!MESSAGE buffering callback sts4.classpath.HNtTMVUj config-service false 89
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.643
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.648
+!MESSAGE classpath=144 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.654
+!MESSAGE buffering callback sts4.classpath.HNtTMVUj credit-service false 144
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.655
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.660
+!MESSAGE classpath=140 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.664
+!MESSAGE buffering callback sts4.classpath.HNtTMVUj eureka-service false 140
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.665
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.672
+!MESSAGE classpath=137 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.676
+!MESSAGE buffering callback sts4.classpath.HNtTMVUj gateway-service false 137
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.677
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.682
+!MESSAGE classpath=144 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.687
+!MESSAGE buffering callback sts4.classpath.HNtTMVUj transaction-service false 144
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:40.688
+!MESSAGE executing callback sts4.classpath.HNtTMVUj 7 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 10:59:41.450
+!MESSAGE executing callback sts4.classpath.HNtTMVUj SUCCESS [done]
+
+!ENTRY org.eclipse.core.net 4 0 2022-05-11 10:59:59.851
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error 'Controlador no válido.
+' #6.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-11 11:00:12.329
+!MESSAGE Using unsafe http transport to retrieve http://downloads.genuitec.com/downloads/products/devstyle/updates/ds20210526, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-11 11:00:19.399
+!MESSAGE Using unsafe http transport to retrieve http://downloads.genuitec.com/downloads/products/codetogether/updates/ct20220404/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-11 11:00:22.338
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/release/latest, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-11 11:00:24.504
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.2.2/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-11 11:00:25.609
+!MESSAGE Server returned lastModified <= 0 for https://raw.githubusercontent.com/AObuchow/Eclipse-Spectrum-Theme/updatesite/updatesite/content.xml.xz
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-05-11 11:00:25.932
+!MESSAGE Server returned lastModified <= 0 for https://raw.githubusercontent.com/AObuchow/Eclipse-Spectrum-Theme/updatesite/updatesite/content.jar
+
+!ENTRY org.eclipse.ui 2 2 2022-05-11 11:03:54.106
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)

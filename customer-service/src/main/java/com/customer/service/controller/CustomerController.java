@@ -13,6 +13,7 @@ import com.customer.service.model.Customer;
 import com.customer.service.service.CustomerService;
 
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -23,6 +24,7 @@ import java.util.Map;
 @Slf4j
 @RestController
 @RequestMapping("/customer")
+@RequiredArgsConstructor
 public class CustomerController {
 
 	@Autowired
@@ -124,24 +126,4 @@ public class CustomerController {
 		return ResponseEntity.ok(resultado);
 	}
 
-	//***************************************************CIRCUIT BREAKER**************************************************************
-	private ResponseEntity<Mono<Account>> fallBackGetAccount(@PathVariable("nroDocument") int nroDocument,RuntimeException exception){
-		return new ResponseEntity("Falla al obtener el listado de cuentas del usuario con nroDocument : " + nroDocument,HttpStatus.OK);
-	}
-	
-	private ResponseEntity<Mono<Account>> fallBackPostAccount(@PathVariable("nroDocument") int nroDocument,@RequestBody Account a,RuntimeException exception){
-		return new ResponseEntity("Falla al insertar la cuenta del usuario con nroDocument : " + nroDocument,HttpStatus.OK);
-	}
-	
-	private ResponseEntity<Mono<Credit>> fallBackGetCredit(@PathVariable("nroDocument") int nroDocument,RuntimeException exception){
-		return new ResponseEntity("Falla al obtener el listado de creditos del usuario con nroDocument : " + nroDocument,HttpStatus.OK);
-	}
-	
-	private ResponseEntity<Mono<Credit>> fallBackPostCredit(@PathVariable("nroDocument") int nroDocument,@RequestBody Credit credit,RuntimeException exception){
-		return new ResponseEntity("Falla al insertar el credito del usuario con nroDocument : " + nroDocument,HttpStatus.OK);
-	}
-	
-	private ResponseEntity<Mono<Report>> fallBackGetTodos(@PathVariable("nroDocument") int nroDocument,RuntimeException exception){
-		return new ResponseEntity("Falla al obtener el listado de productos del usuario con nroDocument : " + nroDocument,HttpStatus.OK);
-	}
 }

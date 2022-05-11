@@ -1,6 +1,8 @@
 package com.customer.service.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.circuitbreaker.ReactiveCircuitBreaker;
+import org.springframework.cloud.client.circuitbreaker.ReactiveCircuitBreakerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
@@ -9,7 +11,6 @@ import com.customer.service.client.Credit;
 import com.customer.service.client.Report;
 import com.customer.service.model.Customer;
 import com.customer.service.repository.CustomerRepository;
-
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
@@ -18,6 +19,8 @@ public class CustomerServiceImpl implements CustomerService {
 
 	@Autowired
 	private CustomerRepository customerRepository;
+	
+	private ReactiveCircuitBreakerFactory reactiveCircuitBreakerFactory;
 
 	@Override
 	public Mono<Customer> addCustomer(Customer c) {
@@ -70,7 +73,12 @@ public class CustomerServiceImpl implements CustomerService {
 	@Override
 	public Mono<Account> getAccountByNroDoc(int nroDocument) {
 		Mono<Account> account = WebClient.create("http://localhost:8080").get().uri("/account/customer/" + nroDocument)
-				.retrieve().bodyToMono(Account.class);
+				.retrieve()
+				.bodyToMono(Account.class)
+				.transform(it -> {
+					ReactiveCircuitBreaker rcb = reactiveCircuitBreakerFactory.create("accountCB");
+					return rcb.run(it, throwable -> Mono.just(Account.builder().build()));
+				}) ;
 		return account;
 	}
 
