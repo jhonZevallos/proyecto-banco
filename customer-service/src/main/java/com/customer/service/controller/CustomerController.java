@@ -1,8 +1,6 @@
 package com.customer.service.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,14 +10,12 @@ import com.customer.service.client.Report;
 import com.customer.service.model.Customer;
 import com.customer.service.service.CustomerService;
 
-import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import java.time.LocalDateTime;
-import java.util.Map;
 
 @Slf4j
 @RestController
@@ -83,7 +79,6 @@ public class CustomerController {
 	}
 
 	// *******metodos webclient******************
-	@CircuitBreaker(name = "accountCB", fallbackMethod = "fallBackPostAccount")
 	@PostMapping("/account/{nroDocument}")
 	public ResponseEntity<Mono<Account>> saveAccount(@PathVariable("nroDocument") int nroDocument,
 			@RequestBody Account a) {
@@ -91,7 +86,6 @@ public class CustomerController {
 		return ResponseEntity.ok(nuevoAccount);
 	}
 
-	@CircuitBreaker(name = "accountCB", fallbackMethod = "fallBackGetAccount")
 	@GetMapping("/account/{nroDocument}")
 	public ResponseEntity<Mono<Account>> getAccountByNroDocument(@PathVariable("nroDocument") int nroDocument) {
 		Mono<Account> account = customerService.getAccountByNroDoc(nroDocument);
@@ -101,7 +95,6 @@ public class CustomerController {
 		return ResponseEntity.ok(account);
 	}
 
-	@CircuitBreaker(name = "creditCB", fallbackMethod = "fallBackPostCredit")
 	@PostMapping("/credit/{nroDocument}")
 	public ResponseEntity<Mono<Credit>> saveCredit(@PathVariable("nroDocument") int nroDocument,
 			@RequestBody Credit credit) {
@@ -109,7 +102,6 @@ public class CustomerController {
 		return ResponseEntity.ok(nuevoCredit);
 	}
 
-	@CircuitBreaker(name = "creditCB", fallbackMethod = "fallBackGetCredit")
 	@GetMapping("/credit/{nroDocument}")
 	public ResponseEntity<Mono<Credit>> getCreditByNroDocument(@PathVariable("nroDocument") int nroDocument) {
 		Mono<Credit> credit = customerService.getCreditByNroDoc(nroDocument);
@@ -119,7 +111,6 @@ public class CustomerController {
 		return ResponseEntity.ok(credit);
 	}
 
-	@CircuitBreaker(name = "todosCB", fallbackMethod = "fallBackGetTodos")
 	@GetMapping("/todos/{nroDocument}")
 	public ResponseEntity<Mono<Report>> getAllProducts(@PathVariable("nroDocument") int nroDocument) {
 		Mono<Report> resultado = customerService.getCustomerAndProducts(nroDocument);

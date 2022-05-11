@@ -21,11 +21,12 @@ eureka:
 resilience4j.circuitbreaker:
     instances:
         accountCB:
+            registerHealthIndicator: true
             slidingWindowSize: 10
             permittedNumberOfCallsInHalfOpenState: 3
             slidingWindowType: TIME_BASED
-            minimumNumberOfCalls: 4
-            waitDurationInOpenState: 2s
+            minimumNumberOfCalls: 20
+            waitDurationInOpenState: 15s
             failureRateThreshold: 50
             eventConsumerBufferSize: 10
         creditCB:
@@ -33,8 +34,8 @@ resilience4j.circuitbreaker:
             slidingWindowSize: 10
             permittedNumberOfCallsInHalfOpenState: 3
             slidingWindowType: TIME_BASED
-            minimumNumberOfCalls: 4
-            waitDurationInOpenState: 2s
+            minimumNumberOfCalls: 20
+            waitDurationInOpenState: 15s
             failureRateThreshold: 50
             eventConsumerBufferSize: 10
         todosCB:
@@ -42,7 +43,7 @@ resilience4j.circuitbreaker:
             slidingWindowSize: 10
             permittedNumberOfCallsInHalfOpenState: 3
             slidingWindowType: TIME_BASED
-            minimumNumberOfCalls: 4
-            waitDurationInOpenState: 2s
+            minimumNumberOfCalls: 20
+            waitDurationInOpenState: 15s
             failureRateThreshold: 50
-            eventConsumerBufferSize: 10    
+            eventConsumerBufferSize: 10

@@ -20,6 +20,7 @@ public class CustomerServiceImpl implements CustomerService {
 	@Autowired
 	private CustomerRepository customerRepository;
 	
+	@Autowired
 	private ReactiveCircuitBreakerFactory reactiveCircuitBreakerFactory;
 
 	@Override
@@ -75,9 +76,9 @@ public class CustomerServiceImpl implements CustomerService {
 		Mono<Account> account = WebClient.create("http://localhost:8080").get().uri("/account/customer/" + nroDocument)
 				.retrieve()
 				.bodyToMono(Account.class)
-				.transform(it -> {
+				.transformDeferred(it -> {
 					ReactiveCircuitBreaker rcb = reactiveCircuitBreakerFactory.create("accountCB");
-					return rcb.run(it, throwable -> Mono.just(Account.builder().build()));
+					return rcb.run(it, throwable -> Mono.empty()); 
 				}) ;
 		return account;
 	}
