@@ -12,11 +12,11 @@ import io.github.resilience4j.timelimiter.TimeLimiterConfig;
 public class CircuitBreakerConfiguration {
 
 	@Bean
-	public Customizer<ReactiveResilience4JCircuitBreakerFactory> accountServiceCusomtizer() {
+	public Customizer<ReactiveResilience4JCircuitBreakerFactory> serviceCusomtizer() {
 		return factory -> {
 		factory.configure(builder -> builder
 		.timeLimiterConfig(TimeLimiterConfig.custom().timeoutDuration(Duration.ofSeconds(2)).build())
-		.circuitBreakerConfig(CircuitBreakerConfig.ofDefaults()), "accountCB");
+		.circuitBreakerConfig(CircuitBreakerConfig.ofDefaults()), "serviceCB");
 		};
 		}
 }

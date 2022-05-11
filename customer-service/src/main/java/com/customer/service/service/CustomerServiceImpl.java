@@ -77,7 +77,7 @@ public class CustomerServiceImpl implements CustomerService {
 				.retrieve()
 				.bodyToMono(Account.class)
 				.transformDeferred(it -> {
-					ReactiveCircuitBreaker rcb = reactiveCircuitBreakerFactory.create("accountCB");
+					ReactiveCircuitBreaker rcb = reactiveCircuitBreakerFactory.create("serviceCB");
 					return rcb.run(it, throwable -> Mono.empty()); 
 				}) ;
 		return account;
@@ -87,14 +87,25 @@ public class CustomerServiceImpl implements CustomerService {
 	public Mono<Account> addAccount(int nroDocument, Account a) {
 		a.setNroDocument(nroDocument);
 		Mono<Account> nuevoAccount = WebClient.create("http://localhost:8080").post().uri("/account")
-				.body(Mono.just(a), Account.class).retrieve().bodyToMono(Account.class);
+				.body(Mono.just(a), Account.class)
+				.retrieve()
+				.bodyToMono(Account.class)
+				.transformDeferred(it -> {
+					ReactiveCircuitBreaker rcb = reactiveCircuitBreakerFactory.create("serviceCB");
+					return rcb.run(it, throwable -> Mono.empty()); 
+				});
 		return nuevoAccount;
 	}
 
 	@Override
 	public Mono<Credit> getCreditByNroDoc(int nroDocument) {
 		Mono<Credit> credit = WebClient.create("http://localhost:8080").get().uri("/credit/customer/" + nroDocument)
-				.retrieve().bodyToMono(Credit.class);
+				.retrieve()
+				.bodyToMono(Credit.class)
+				.transformDeferred(it -> {
+					ReactiveCircuitBreaker rcb = reactiveCircuitBreakerFactory.create("serviceCB");
+					return rcb.run(it, throwable -> Mono.empty()); 
+				}) ;
 		return credit;
 	}
 
@@ -102,7 +113,13 @@ public class CustomerServiceImpl implements CustomerService {
 	public Mono<Credit> addCredit(int nroDocument, Credit credit) {
 		credit.setNroDocument(nroDocument);
 		Mono<Credit> nuevoCredit = WebClient.create("http://localhost:8080").post().uri("/credit")
-				.body(Mono.just(credit), Credit.class).retrieve().bodyToMono(Credit.class);
+				.body(Mono.just(credit), Credit.class)
+				.retrieve()
+				.bodyToMono(Credit.class)
+				.transformDeferred(it -> {
+					ReactiveCircuitBreaker rcb = reactiveCircuitBreakerFactory.create("serviceCB");
+					return rcb.run(it, throwable -> Mono.empty()); 
+				}) ;
 		return nuevoCredit;
 	}
 
@@ -113,10 +130,18 @@ public class CustomerServiceImpl implements CustomerService {
 		return customerRepository.findByNroDocument(nroDocument)
 				.flatMap(customer->{
 					return WebClient.create("http://localhost:8080").get().uri("/account/customer/{nroDocument}", nroDocument)
-							.retrieve().bodyToMono(Account.class).
-							flatMap(account ->{
+							.retrieve().bodyToMono(Account.class)
+							.transformDeferred(it -> {
+								ReactiveCircuitBreaker rcb = reactiveCircuitBreakerFactory.create("serviceCB");
+								return rcb.run(it, throwable -> Mono.empty()); 
+							})
+							.flatMap(account ->{
 								return WebClient.create("http://localhost:8080").get().uri("/credit/customer/{nroDocument}", nroDocument)
 								.retrieve().bodyToMono(Credit.class)
+								.transformDeferred(it -> {
+									ReactiveCircuitBreaker rcb = reactiveCircuitBreakerFactory.create("serviceCB");
+									return rcb.run(it, throwable -> Mono.empty()); 
+								})
 								.flatMap(credit->{
 									report.setCustomer(customer);
 									report.setAccounts(account);
