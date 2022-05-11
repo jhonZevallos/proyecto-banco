@@ -83,12 +83,10 @@ public class CustomerController {
 	// *******metodos webclient******************
 	@CircuitBreaker(name = "accountCB", fallbackMethod = "fallBackPostAccount")
 	@PostMapping("/account/{nroDocument}")
-	public Mono<ResponseEntity<Mono<Account>>> saveAccount(@PathVariable("nroDocument") int nroDocument,
+	public ResponseEntity<Mono<Account>> saveAccount(@PathVariable("nroDocument") int nroDocument,
 			@RequestBody Account a) {
-		return Mono
-				.just(ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON)
-						.body(customerService.addAccount(nroDocument, a)))
-				.defaultIfEmpty(ResponseEntity.notFound().build());
+		Mono<Account> nuevoAccount = customerService.addAccount(nroDocument, a);
+		return ResponseEntity.ok(nuevoAccount);
 	}
 
 	@CircuitBreaker(name = "accountCB", fallbackMethod = "fallBackGetAccount")
@@ -127,23 +125,23 @@ public class CustomerController {
 	}
 
 	//***************************************************CIRCUIT BREAKER**************************************************************
-	private ResponseEntity<Flux<Account>> fallBackGetAccount(@PathVariable("nroDocument") int nroDocument,RuntimeException exception){
+	private ResponseEntity<Mono<Account>> fallBackGetAccount(@PathVariable("nroDocument") int nroDocument,RuntimeException exception){
 		return new ResponseEntity("Falla al obtener el listado de cuentas del usuario con nroDocument : " + nroDocument,HttpStatus.OK);
 	}
 	
-	private ResponseEntity<Flux<Account>> fallBackPostAccount(@PathVariable("nroDocument") int nroDocument,@RequestBody Account a,RuntimeException exception){
+	private ResponseEntity<Mono<Account>> fallBackPostAccount(@PathVariable("nroDocument") int nroDocument,@RequestBody Account a,RuntimeException exception){
 		return new ResponseEntity("Falla al insertar la cuenta del usuario con nroDocument : " + nroDocument,HttpStatus.OK);
 	}
 	
-	private ResponseEntity<Flux<Account>> fallBackGetCredit(@PathVariable("nroDocument") int nroDocument,RuntimeException exception){
+	private ResponseEntity<Mono<Credit>> fallBackGetCredit(@PathVariable("nroDocument") int nroDocument,RuntimeException exception){
 		return new ResponseEntity("Falla al obtener el listado de creditos del usuario con nroDocument : " + nroDocument,HttpStatus.OK);
 	}
 	
-	private ResponseEntity<Flux<Account>> fallBackPostCredit(@PathVariable("nroDocument") int nroDocument,@RequestBody Credit credit,RuntimeException exception){
+	private ResponseEntity<Mono<Credit>> fallBackPostCredit(@PathVariable("nroDocument") int nroDocument,@RequestBody Credit credit,RuntimeException exception){
 		return new ResponseEntity("Falla al insertar el credito del usuario con nroDocument : " + nroDocument,HttpStatus.OK);
 	}
 	
-	private ResponseEntity<Flux<Account>> fallBackGetTodos(@PathVariable("nroDocument") int nroDocument,RuntimeException exception){
+	private ResponseEntity<Mono<Report>> fallBackGetTodos(@PathVariable("nroDocument") int nroDocument,RuntimeException exception){
 		return new ResponseEntity("Falla al obtener el listado de productos del usuario con nroDocument : " + nroDocument,HttpStatus.OK);
 	}
 }
