@@ -103,7 +103,6 @@ INDEX VERSION 1.131+C:\nttdata\Proyecto Banco\.metadata\.plugins\org.eclipse.jdt
 1287747012.index
 2441300386.index
 602143188.index
-3916334769.index
 1248715998.index
 905279043.index
 509855511.index
@@ -133,7 +132,6 @@ INDEX VERSION 1.131+C:\nttdata\Proyecto Banco\.metadata\.plugins\org.eclipse.jdt
 2603523087.index
 2678895377.index
 2519023562.index
-2337902045.index
 2477782500.index
 1247106926.index
 2738221193.index
@@ -158,21 +156,17 @@ INDEX VERSION 1.131+C:\nttdata\Proyecto Banco\.metadata\.plugins\org.eclipse.jdt
 1297565823.index
 1190629410.index
 1349302868.index
-1174618395.index
 4000719838.index
 4164605656.index
 3899961805.index
 4106766552.index
 1897264082.index
 132699103.index
-120323146.index
 106786843.index
-1874331943.index
 1694274128.index
 1468817437.index
 3188494941.index
 2519754077.index
-1719087721.index
 1186911532.index
 2518095756.index
 3821827566.index
@@ -195,7 +189,6 @@ INDEX VERSION 1.131+C:\nttdata\Proyecto Banco\.metadata\.plugins\org.eclipse.jdt
 3166675727.index
 2880810691.index
 1452288738.index
-4283009791.index
 502338129.index
 2870125814.index
 1130135091.index

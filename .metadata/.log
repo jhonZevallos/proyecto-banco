@@ -3075,3 +3075,96 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 12:00:38.367
 !MESSAGE executing callback sts4.classpath.HNtTMVUj SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:25:56.939
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:25:56.954
+!MESSAGE classpath=144 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:25:56.967
+!MESSAGE buffering callback sts4.classpath.HNtTMVUj bank-account-service false 144
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:25:56.970
+!MESSAGE executing callback sts4.classpath.HNtTMVUj 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:25:57.023
+!MESSAGE executing callback sts4.classpath.HNtTMVUj SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:25:58.721
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:25:58.734
+!MESSAGE classpath=89 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:25:58.744
+!MESSAGE buffering callback sts4.classpath.HNtTMVUj config-service false 89
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:25:58.747
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:25:58.761
+!MESSAGE classpath=144 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:25:58.774
+!MESSAGE buffering callback sts4.classpath.HNtTMVUj credit-service false 144
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:25:58.776
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:25:58.794
+!MESSAGE classpath=177 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:25:58.808
+!MESSAGE buffering callback sts4.classpath.HNtTMVUj customer-service false 177
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:25:58.811
+!MESSAGE executing callback sts4.classpath.HNtTMVUj 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:25:58.981
+!MESSAGE executing callback sts4.classpath.HNtTMVUj SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:26:00.261
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:26:00.276
+!MESSAGE classpath=140 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:26:00.289
+!MESSAGE buffering callback sts4.classpath.HNtTMVUj eureka-service false 140
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:26:00.292
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:26:00.305
+!MESSAGE classpath=137 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:26:00.327
+!MESSAGE buffering callback sts4.classpath.HNtTMVUj gateway-service false 137
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:26:00.339
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:26:00.390
+!MESSAGE classpath=144 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:26:00.402
+!MESSAGE buffering callback sts4.classpath.HNtTMVUj transaction-service false 144
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:26:00.405
+!MESSAGE executing callback sts4.classpath.HNtTMVUj 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:26:01.607
+!MESSAGE executing callback sts4.classpath.HNtTMVUj SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:31:16.328
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.HNtTMVUj
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:31:16.329
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.HNtTMVUj
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:31:16.330
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-11 13:31:16.332
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.HNtTMVUj => OK
