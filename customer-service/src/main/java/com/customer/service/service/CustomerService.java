@@ -1,7 +1,5 @@
 package com.customer.service.service;
 
-import java.util.Map;
-
 import com.customer.service.client.Account;
 import com.customer.service.client.Credit;
 import com.customer.service.client.Report;

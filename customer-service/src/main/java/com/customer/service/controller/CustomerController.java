@@ -11,13 +11,12 @@ import com.customer.service.model.Customer;
 import com.customer.service.service.CustomerService;
 
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import java.time.LocalDateTime;
 
-@Slf4j
+
 @RestController
 @RequestMapping("/customer")
 @RequiredArgsConstructor
